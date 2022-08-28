@@ -1,0 +1,47 @@
+.App {
+  font-family: cursive;
+  text-align: center;
+}
+
+.menu-box {
+  display: flex;
+}
+
+@keyframes wag {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.logo {
+  align-content: top;
+  width: 3rem;
+  animation: wag 2s normal linear infinite;
+  z-index: 0;
+}
+
+.tile {
+  font-family: cursive;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: purple;
+  z-index: 1;
+}
+
+.studios {
+  position: absolute;
+  left: 20%;
+  top: 8%;
+}
